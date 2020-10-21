@@ -1,0 +1,85 @@
+Online shoping
+
+
+public class customar {
+
+	
+	private String name;
+	private String adress;
+	private int mobileno;
+	
+   customar(String name,String adress,int mobileno)
+	{
+		this.name=name;
+		this.adress=adress;
+		this.mobileno=mobileno;
+		
+	}
+	void display()
+	{
+		System.out.println("Customar details");
+		System.out.println("name= "+name +" adress= "+adress +" mobileno= "+mobileno );
+	}
+}
+
+public class product {
+
+	private int id;
+	private String title;
+	private String quality;
+	
+	
+	product()
+	{
+		id=1;
+		title="electronic devices";
+		quality="good";
+		
+	}	
+	void display()
+	{
+		System.out.println("product1");
+		System.out.println("id= " +id+ " title= " +title+ " quality= " +quality);
+	}
+	
+}
+
+public class product1 {
+	
+
+		private int id;
+		private String title;
+		private String quality;
+		
+		
+		product1()
+		{
+			id=2;
+			title="food";
+			quality="good";
+			
+		}	
+		void display1()
+		{
+			System.out.println("product2");
+		System.out.println("id= " +id+ " title= " +title+ " quality= " +quality);
+		}
+}
+
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       
+		product p=new product();
+		p.display();
+		product1 p1=new product1();
+		p1.display1();
+	
+		customar c;
+		c=new customar("aa","pune",4585);
+		c.display();
+	}
+
+}
